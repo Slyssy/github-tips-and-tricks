@@ -49,3 +49,55 @@ h6 {
 #__next {
   isolation: isolate;
 }
+
+body {
+  width: 90vw;
+  margin: auto;
+}
+/* !Navbar Styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  padding: 1rem 0 1rem 0;
+}
+.logo {
+  width: 30%;
+}
+.nav-links {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.page-container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+main {
+  width: 100%;
+  height: 60vh;
+  border: solid 1px red;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.selector-img {
+  width: 18%;
+  height: 10vh;
+  border: solid 1px red;
+  margin: 5vh 0;
+}
