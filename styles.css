@@ -188,11 +188,16 @@ section {
   display: none;
 }
 
+hr {
+  border-top: 2px solid var(--brown-gray);
+  width: 80%;
+  margin: auto;
+}
 @media only screen and (min-width: 900px) {
   section {
     margin-bottom: 7rem;
-    background-color: #fde8bf54;
-    border-radius: 20px;
+    /* background-color: #fde8bf54;
+    border-radius: 20px; */
   }
   .title {
     font-size: 3rem;
