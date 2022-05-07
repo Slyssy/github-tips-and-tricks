@@ -32,14 +32,14 @@
       </ul>
     </nav>
     <div class="page-container">
-      <main>
-        <div class="step-1 hidden">
+      <section>
+        <div class="step-1">
           <h1 class="title">GitHub Pages Integration</h1>
           <h5 class="subtitle">Step 1: Create a Repository</h5>
-          <div class="main-image">
+          <div class="section-image">
             <img
-              src="./images/new-repository.gif"
-              alt="Image of gitHub page."
+              src="https://drive.google.com/uc?export=view&id=1aKL9RBE_F6RN9R4PA7JHlh0cQSSEpZSi"
+              alt="GIF of selecting the new repository button on GitHub."
             />
           </div>
           <p class="main-note">
@@ -51,19 +51,238 @@
             the top left of the page.
           </p>
         </div>
-      </main>
+      </section>
       <section>
-        <div class="selector-img active-slide">
-          <img
-            src="./images/step-1a.png"
-            alt="Image of Step 1a Screen"
-            class="step1a"
-          />
+        <div class="step-1">
+          <h5 class="subtitle">Step 2: Finalize repository creation.</h5>
+          <div class="section-image">
+            <img
+              src="https://drive.google.com/uc?export=view&id=18KRho-4UnS3-pqqfPgTCsk-YkWzNnlqV"
+              alt="GIF of naming a GitHub repository."
+              class="name-repository"
+            />
+          </div>
+          <p class="main-instruction">
+            You will be taken to a screen that looks like this.
+          </p>
+          <ol class="step-instructions">
+            <li>Fill in the Repository Name field.</li>
+            <li>Select whether the repository will be Public or Private.</li>
+            <li>ALWAYS select the "Add a README" check box.</li>
+            <li>Add a .gitignore file if you'd like one.</li>
+            <li>Choose a license if you require one. (I never have.)</li>
+            <li>Click green "Create repository" button.</li>
+          </ol>
         </div>
-        <div class="selector-img"></div>
-        <div class="selector-img"></div>
-        <div class="selector-img"></div>
-        <div class="selector-img"></div>
+      </section>
+      <section>
+        <div class="step-3">
+          <h5 class="subtitle">Step 3: Prepare new repository for cloning.</h5>
+          <div class="section-image">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1HhSZMqLQpTuYowLGyTY2ZWXs9xO7yksP"
+              alt="GIF of copying the GitHub URL Path."
+            />
+          </div>
+          <p class="main-instruction">
+            Now that your repository has been created, your screen should look
+            like this.
+          </p>
+          <ol class="step-instructions">
+            <li>
+              We need to copy the url to this repository. We will need it to
+              clone this repository to your local machine.
+            </li>
+            <li>
+              To do this we first need to click on the green "Code" button
+              located at the top right.
+            </li>
+            <li>
+              Then we need to copy the url to this repository. Select "HTTPS"
+              from the top selection bar, and copy the url path.
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section>
+        <div class="step-4">
+          <h5 class="subtitle">
+            Step 4: Clone the repository to your local machine.
+          </h5>
+          <div class="section-image">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1FySuSK6E-zKdvB2ARaBKDOtR2AzfRszQ"
+              alt="GIF of cloning a GitHub repository on a local machine."
+            />
+          </div>
+          <p class="main-instruction">
+            Clone the new repository to your local machine using your terminal.
+          </p>
+          <ol class="step-instructions">
+            <li>
+              Open your terminal on your MAC. If you are using a Windows
+              machine, use whichever Windows Terminal emulator you prefer.
+            </li>
+            <li>
+              In your terminal, write the path to where you would like to clone
+              your repository. This will make a new directory (folder) wherever
+              you choose.
+            </li>
+            <li>
+              Now you simply need to type
+              <span class="type-text">git clone </span>and paste the url you
+              copied in Step 3.
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section>
+        <div class="step-5">
+          <h5 class="subtitle">
+            Step 5: Add your initial files to your local repository folder.
+          </h5>
+          <div class="section-image">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1FlPZIIMl4CtnNBEYwx8U-XONxZA7f9k1"
+              alt="GIF of adding the initial HTML and CSS Files via VS Code terminal."
+            />
+          </div>
+          <p class="main-instruction">
+            I typically add the new files in the VS Code's built-in terminal.
+          </p>
+          <ol class="step-instructions">
+            <li>
+              Open the local repository folder you just created in VS Code.
+            </li>
+            <li>
+              Use the key combination <span class="type-text">control + ~</span>
+              to open the terminal. Note VS Codes terminal will already be at
+              the repository folder.
+            </li>
+            <li>
+              Create your index.html file and styles.css files by typing
+              <span class="type-text">touch index.html styles.css </span> in the
+              VS Code terminal.
+            </li>
+            <li>
+              Type a test message inside your index.html file. I am typing
+              "Hello World!"
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section>
+        <div class="step-6">
+          <h5 class="subtitle">
+            Step 6: Now you are ready to push the local changes to the GitHub
+            repository.
+          </h5>
+          <div class="section-image">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1MzRwkLjBWAkgnnJbiSj5sZTiFDkHANlW"
+              alt="Image of gitHub page."
+            />
+          </div>
+          <p class="main-instruction">
+            Pushing the files to the GitHub repository can be done in 3 easy
+            steps. In your terminal, you will type...
+          </p>
+          <ol class="step-instructions">
+            <li>
+              Check to see what changes are available for staging by typing
+              <span class="type-text">git status</span>. Files that are red need
+              to be staged.
+            </li>
+            <li>
+              <span class="type-text">git add .</span> to add all of the new
+              files in the working director to the staging area. You can confirm
+              the files were staged by typing
+              <span class="type-text">git status</span> again. The files should
+              now be green.
+            </li>
+            <li>
+              Now type
+              <span class="type-text">git commit -m"Initial Commit"</span>. This
+              will commit the staged files. Make sure you include a message
+              explaining what you are committing. That's done in -m"..." piece
+              of the command.
+            </li>
+            <li>
+              Finally, you push the committed files to the GitHub repository by
+              typing <span class="type-text">git push</span>.
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section>
+        <div class="step-7">
+          <h5 class="subtitle">Step 7: Deploy vit GitHub pages.</h5>
+          <div class="section-image">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1m7JzNhJdghXPpGaS1mT0GJGLqHHNFTbf"
+              alt="Image of gitHub page."
+            />
+          </div>
+          <p class="main-instruction">
+            Finally, we can go back to GitHub and confirm our files have been
+            pushed to the repository and deploy or static page by using GitHub
+            pages.
+          </p>
+          <ol class="step-instructions">
+            <li>
+              Go back to your GitHub page and locate your new repository. You
+              can see all of your repositories clicking the
+              <strong>⌄</strong> arrow by your profile image at the top left and
+              selecting "Your Repositories".
+            </li>
+            <li>
+              After selecting your new repository, click on the
+              <strong>"Settings"</strong> icon from the menu bar
+              (top-center-right).
+            </li>
+            <li>From the sidebar, select <strong>"Pages"</strong>.</li>
+            <li>
+              Select <strong>"Main"</strong> from the Source dropdown menu.
+            </li>
+            <li>
+              Finally, select the <strong>"Save"</strong> button. That will take
+              you to a page that tells you that your site is ready to be
+              published.
+              <span class="emphasis"
+                >Take note of the link. That is the new url to your page!</span
+              >
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section>
+        <div class="step-8">
+          <h5 class="subtitle">
+            Step 8: Follow link to your new deployed webpage.
+          </h5>
+          <div class="section-image">
+            <img
+              src="https://drive.google.com/uc?export=view&id=1_V5X4lgGyBwKKmedhI6Xi2g3VjqyqJ2E"
+              alt="Image of gitHub page."
+            />
+          </div>
+          <p class="main-instruction">
+            Now that your page is deployed you can copy/paste the link into your
+            browser or click on the link.
+          </p>
+          <ol class="step-instructions">
+            <li>
+              To confirm the page is deployed you can click on the Actions icon
+              in the menu bar.
+            </li>
+            <li>If you see a green ✔️ mark, your page has been deployed.</li>
+            <li>Follow the link to your new page!</li>
+          </ol>
+          <p class="emphasis">
+            Every time you push something back to your main branch of this
+            repository, the webpage will be updated. Great JOB!
+          </p>
+        </div>
       </section>
     </div>
   </body>
