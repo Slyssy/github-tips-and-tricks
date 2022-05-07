@@ -191,7 +191,6 @@ section {
 @media only screen and (min-width: 900px) {
   section {
     margin-bottom: 7rem;
-    /* border: solid 1px var(--davys-grey); */
     background-color: #fde8bf54;
     border-radius: 20px;
   }
