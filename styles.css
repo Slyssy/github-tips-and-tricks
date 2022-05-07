@@ -187,3 +187,120 @@ section {
 .hidden {
   display: none;
 }
+
+@media only screen and (min-width: 768px) {
+  section {
+    margin-bottom: 5rem;
+  }
+  .title {
+    font-size: 40px;
+    margin: 2rem;
+  }
+
+  .subtitle {
+    font-size: 24px;
+    margin: 1.5rem;
+  }
+  .step-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .section-1-image {
+    width: 100%;
+  }
+
+  .step-1-instructions > p {
+    font-size: 1.2rem;
+  }
+
+  .step-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .section-2-image {
+    order: 2;
+    flex-basis: 60%;
+  }
+
+  .step-2-instructions p {
+    font-size: 1.2rem;
+  }
+
+  .step-instructions {
+    font-size: 1.2rem;
+  }
+
+  .step-3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .main-instruction {
+    font-size: 1.2rem;
+  }
+
+  .step-4 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .step-4-instructions {
+    order: 1;
+  }
+
+  .section-4-image {
+    order: 2;
+    margin: auto;
+  }
+
+  .step-5 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .step-6 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .section-6-image {
+    order: 2;
+  }
+
+  .step-7 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .step-8 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .section-8-image {
+    order: 2;
+  }
+}
