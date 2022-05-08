@@ -117,28 +117,6 @@ nav {
   transition: 0.1s;
 }
 
-.page-navbar {
-  display: none;
-}
-
-.page-navbar.sticky {
-  display: block;
-}
-
-.page-links {
-  position: fixed;
-  top: 5rem;
-  left: 0rem;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  transition: 0.6s;
-  padding: 0.75rem 0.75rem;
-  background: #15111174;
-}
-
 .toggle-button {
   position: absolute;
   top: 3.5rem;
@@ -158,52 +136,15 @@ nav {
   border-radius: 10px;
 }
 
-.page-navbar ul li {
-  list-style-type: none;
-}
-
-.page-navbar ul li:hover {
-  background: none;
-}
-
-.page-navbar ul li a:hover {
-  font-size: 1.5rem;
-  color: var(--river-green);
-}
-
-.page-navbar ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
-  padding: 0rem 1rem;
-  display: block;
-  text-align: center;
-  transition: all 0.3s ease;
-}
-
-.close-icon {
-  width: 24px;
-  stroke: white;
-  margin-left: 80%;
-}
-
-.close-icon:hover {
-  stroke: var(--maximum-yellow-red);
-  cursor: pointer;
-}
-
-.close-icon:active {
-  width: 22px;
-}
+/* !Main Page Section Styling */
 
 section {
   width: 100%;
-  /* height: 80vh; */
-  /* border: solid 1px red; */
-  margin-bottom: 2em;
+  height: 70vh;
+  margin: 1rem auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -284,20 +225,48 @@ hr {
 
 /* ! Device Breakpoints */
 @media only screen and (min-width: 900px) {
-  section {
-    margin-bottom: 7rem;
-    /* background-color: #fde8bf54;
-    border-radius: 20px; */
+  .toggle-button {
+    display: none;
   }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10%;
+  }
+
+  .nav-links a:link,
+  .nav-links a:visited {
+    font-size: 1.2rem;
+  }
+
+  .nav-links a:hover {
+    font-size: 1.5rem;
+  }
+
+  .nav-links a:active {
+    font-size: 1.2rem;
+  }
+
   .title {
     font-size: 3rem;
-    margin: 2.5rem;
+    margin: 1.5rem;
   }
 
   .subtitle {
     font-size: 2rem;
-    margin: 2rem;
+    margin: 1rem;
   }
+
+  .step-1-instructions > p {
+    font-size: 1.2rem;
+  }
+}
+
+/* 
+
+
   .section-image {
     margin: 2rem;
   }
@@ -313,9 +282,7 @@ hr {
   .instructions {
     margin: 1rem;
   }
-  .step-1-instructions > p {
-    font-size: 1.2rem;
-  }
+ 
 
   .step-2 {
     width: 100%;
@@ -430,5 +397,4 @@ hr {
 
   .nav-links a:active {
     font-size: 1.2rem;
-  }
-}
+  } */
