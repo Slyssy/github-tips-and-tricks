@@ -281,6 +281,8 @@ hr {
   width: 80%;
   margin: auto;
 }
+
+/* ! Device Breakpoints */
 @media only screen and (min-width: 900px) {
   section {
     margin-bottom: 7rem;
