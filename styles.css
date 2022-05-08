@@ -65,8 +65,9 @@ body {
 }
 /* !Navbar Styling */
 nav {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
@@ -80,17 +81,25 @@ nav {
 }
 
 .nav-links {
-  width: 70%;
-  display: flex;
-  justify-content: space-between;
+  width: 80%;
+  margin-top: 2rem;
+  display: none;
+  flex-direction: column;
+  gap: 1.5rem;
+  /* justify-content: space-around; */
+  align-items: center;
   list-style-type: none;
   padding-left: 0;
   transition: 0.6s;
 }
 
+.nav-links.active {
+  display: flex;
+}
+
 .nav-links a:link,
 .nav-links a:visited {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   color: var(--davys-grey);
   text-decoration: none;
   transition: 0.3s;
@@ -99,12 +108,12 @@ nav {
 .nav-links a:hover {
   color: var(--river-green);
   font-weight: 400;
-  font-size: 1.5rem;
+  font-size: 1rem;
   transition: 0.3s;
 }
 
 .nav-links a:active {
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   transition: 0.1s;
 }
 
@@ -119,15 +128,34 @@ nav {
 .page-links {
   position: fixed;
   top: 5rem;
-  left: 5rem;
-  width: 90%;
+  left: 0rem;
+  width: 100%;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-around;
-  /* gap: 1rem; */
   transition: 0.6s;
-  padding: 1rem 1rem;
+  padding: 0.75rem 0.75rem;
   background: #15111174;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 3.5rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  display: flex;
+}
+
+.toggle-button .bar {
+  height: 2px;
+  width: 100%;
+  background-color: var(--davys-grey);
+  border-radius: 10px;
 }
 
 .page-navbar ul li {
@@ -137,9 +165,7 @@ nav {
 .page-navbar ul li:hover {
   background: none;
 }
-.page-navbar ul li a {
-  color: white;
-}
+
 .page-navbar ul li a:hover {
   font-size: 1.5rem;
   color: var(--river-green);
@@ -147,7 +173,8 @@ nav {
 
 .page-navbar ul li a {
   text-decoration: none;
-  font-size: 1.3rem;
+  color: white;
+  font-size: 1rem;
   padding: 0rem 1rem;
   display: block;
   text-align: center;
@@ -377,5 +404,28 @@ hr {
 
   .section-8-image {
     order: 2;
+  }
+
+  .toggle-button {
+    display: none;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10%;
+  }
+
+  .nav-links a:link,
+  .nav-links a:visited {
+    font-size: 1.2rem;
+  }
+
+  .nav-links a:hover {
+    font-size: 1.5rem;
+  }
+
+  .nav-links a:active {
+    font-size: 1.2rem;
   }
 }

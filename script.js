@@ -1,6 +1,15 @@
+const toggleButton = document.querySelector('.toggle-button');
+const navbarLinks = document.querySelector('.nav-links');
 const pageNavbar = document.querySelector('.page-navbar');
 const pageLinks = document.querySelector('.page-links');
 const stickyClose = document.querySelector('.close-icon');
+
+//% Toggle Navbar
+//% Navbar toggle button event listener
+toggleButton.addEventListener('click', (e) => {
+  e.preventDefault();
+  navbarLinks.classList.toggle('active');
+});
 
 //% Sticky Navbar
 window.addEventListener('scroll', () => {
